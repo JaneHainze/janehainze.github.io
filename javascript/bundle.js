@@ -58,9 +58,13 @@
 	
 	var _reactRouter = __webpack_require__(172);
 	
-	var _splash = __webpack_require__(235);
+	var _splash = __webpack_require__(236);
 	
 	var _splash2 = _interopRequireDefault(_splash);
+	
+	var _about = __webpack_require__(235);
+	
+	var _about2 = _interopRequireDefault(_about);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -74,7 +78,7 @@
 	  var root = document.getElementById("root");
 	  _reactDom2.default.render(_react2.default.createElement(
 	    _reactRouter.Router,
-	    null,
+	    { history: _reactRouter.hashHistory },
 	    _react2.default.createElement(
 	      _reactRouter.Route,
 	      { path: '/', component: App },
@@ -82,7 +86,7 @@
 	      _react2.default.createElement(_reactRouter.Route, { path: 'process', component: Process }),
 	      _react2.default.createElement(_reactRouter.Route, { path: 'portfolio', component: Portfolio }),
 	      _react2.default.createElement(_reactRouter.Route, { path: 'resume', component: Resume }),
-	      _react2.default.createElement(_reactRouter.Route, { path: 'about', component: About }),
+	      _react2.default.createElement(_reactRouter.Route, { path: 'about', component: _about2.default }),
 	      _react2.default.createElement(_reactRouter.Route, { path: 'contact', component: Contact })
 	    )
 	  ), root);
@@ -208,12 +212,12 @@
 	      null,
 	      _react2.default.createElement(
 	        'h2',
-	        { className: 'copy hi fade-in one' },
+	        { className: 'copy hi green fade-in one' },
 	        'Hi there.'
 	      ),
 	      _react2.default.createElement(
 	        'h2',
-	        { className: 'copy jane fade-in two' },
+	        { className: 'copy fade-in two' },
 	        'I\'m Jane - a UX designer, researcher, and writer living and working in SF.'
 	      )
 	    )
@@ -241,14 +245,6 @@
 	    'div',
 	    null,
 	    'My stuffs!'
-	  );
-	};
-	
-	var About = function About() {
-	  return _react2.default.createElement(
-	    'div',
-	    null,
-	    'Me!'
 	  );
 	};
 	
@@ -27281,6 +27277,46 @@
 
 /***/ },
 /* 235 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var About = function About() {
+	  return _react2.default.createElement(
+	    "div",
+	    { className: "copy about" },
+	    "I\u2019m Jane Hainze (last name sounds like the ketchup, spelled differently) a UX pro with a background in writing, research, and communications.",
+	    _react2.default.createElement("br", null),
+	    _react2.default.createElement("br", null),
+	    _react2.default.createElement(
+	      "small",
+	      { className: "green" },
+	      "A desire to build and shape the products I once told stories about\xA0"
+	    ),
+	    "\u2013 and a long-standing interest in exploring the intersection of people, technology and design \u2013 led me to UX. I love seeing what makes people tick when it comes to tech, and",
+	    _react2.default.createElement(
+	      "small",
+	      { className: "green" },
+	      "striking a balance between the verbal and visual."
+	    ),
+	    "I\u2019m always curious, and always learning."
+	  );
+	};
+	
+	exports.default = About;
+
+/***/ },
+/* 236 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";

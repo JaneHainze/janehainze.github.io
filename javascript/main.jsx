@@ -1,13 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Router, Route, Link, IndexRoute } from 'react-router'
+import { Router, Route, Link, IndexRoute, hashHistory } from 'react-router'
 
-import Splash from './splash'
+
+import Splash from './splash';
+import About from './about';
 
 document.addEventListener("DOMContentLoaded", () => {
   const root = document.getElementById("root");
   ReactDOM.render((
-    <Router>
+    <Router history={hashHistory}>
       <Route path="/" component={App}>
         <IndexRoute component={Home}/>
         <Route path="process" component={Process}/>
@@ -69,8 +71,8 @@ class App extends React.Component {
 const Home = () => (
   <main>
     <section>
-      <h2 className="copy hi fade-in one">Hi there.</h2>
-      <h2 className="copy jane fade-in two">I'm Jane - a UX designer, researcher, and writer living and working in SF.</h2>
+      <h2 className="copy hi green fade-in one">Hi there.</h2>
+      <h2 className="copy fade-in two">I'm Jane - a UX designer, researcher, and writer living and working in SF.</h2>
     </section>
   </main>
 );
@@ -90,12 +92,6 @@ const Portfolio = () => (
 const Resume = () => (
   <div>
     My stuffs!
-  </div>
-);
-
-const About = () => (
-  <div>
-    Me!
   </div>
 );
 

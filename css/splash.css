@@ -140,15 +140,26 @@ ul.header-list {
   animation-delay: 1s;
 }
 
+.copy {
+	color: #bbbabb;
+}
 
+.green {
+	color: #6bc578;
+}
 
 .copy.hi {
-  color: #6bc578;
   margin-bottom: 75px;
 }
 
-.copy.jane {
-  color: #bbbabb;
+.about {
+	font-size: 20px;
+  color: #9b9b9b;
+	width: 518px;
+	height: 297px;
+	margin-top: 110px;
+	text-align: left;
+	line-height: 28px;
 }
 
 main {
