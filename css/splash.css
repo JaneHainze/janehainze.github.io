@@ -50,7 +50,7 @@ blockquote, q {
 
 /* Navbar */
 
-html, body {
+html, body, #root, .container {
   height: 100%;
 }
 
@@ -62,7 +62,8 @@ body {
 
 .page-wrap {
   min-height: 100%;
-  margin-bottom: -50px;
+  /*height: 100%;*/
+  margin-bottom: -100px;
 }
 
 header {
@@ -78,7 +79,7 @@ ul.header-list {
   /*margin: auto;*/
 }
 
-li.header-item {
+.header-item {
   list-style: none;
   width: 120px;
   font-family: ShreeDev0714;
@@ -91,7 +92,7 @@ li.header-item {
   text-align: center;
 }
 
-a.header-link {
+.header-link {
   text-decoration: none;
   color: #6bc578;
   width: 100%;
@@ -118,7 +119,7 @@ a.header-link {
   -moz-animation:fadeIn ease-in 1;
   animation:fadeIn ease-in 1;
 
-  -webkit-animation-fill-mode:forwards;  
+  -webkit-animation-fill-mode:forwards;
   -moz-animation-fill-mode:forwards;
   animation-fill-mode:forwards;
 
@@ -175,7 +176,7 @@ footer {
 	transition: all 0.3s;
 }
 
-.header-item.exp a {
+.header-item.exp .header-link {
 	transition: all 0.3s;
 }
 
@@ -186,7 +187,7 @@ footer {
 	transform: scale(1.3, 1);
 }
 
-.header-item.exp:hover a {
+.header-item.exp:hover .header-link {
   transform: scale(.75, 1);
 	letter-spacing: 1.3px;
 }
