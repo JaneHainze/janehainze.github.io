@@ -1,0 +1,192 @@
+/* Reset */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+body {
+	line-height: 1;
+	color: black;
+	background: white;
+}
+ol, ul {
+	list-style: none;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+caption, th, td {
+	text-align: left;
+	font-weight: normal;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: "";
+}
+blockquote, q {
+	quotes: "" "";
+}
+
+
+/* Navbar */
+
+html, body {
+  height: 100%;
+}
+
+body {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-wrap {
+  min-height: 100%;
+  margin-bottom: -50px;
+}
+
+header {
+  margin-top: 50px;
+}
+
+ul.header-list {
+  height: 60px;
+  display: flex;
+  /*flex-direction: row;*/
+  justify-content: space-between;
+  /*width: 70%;*/
+  /*margin: auto;*/
+}
+
+li.header-item {
+  list-style: none;
+  width: 120px;
+  font-family: ShreeDev0714;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+a.header-link {
+  text-decoration: none;
+  color: #6bc578;
+  width: 100%;
+}
+
+
+.copy {
+  font-family: ShreeDev0714;
+  font-size: 64px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  text-align: center;
+}
+
+/* https://codepen.io/bluehaus/pen/EfGyi */
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fade-in {
+  opacity:0;
+  -webkit-animation:fadeIn ease-in 1;
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;  
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:1s;
+  -moz-animation-duration:1s;
+  animation-duration:1s;
+}
+
+.fade-in.one {
+  -webkit-animation-delay: 0.3s;
+  -moz-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+
+.fade-in.two {
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay:1s;
+  animation-delay: 1s;
+}
+
+
+
+.copy.hi {
+  color: #6bc578;
+  margin-bottom: 75px;
+}
+
+.copy.jane {
+  color: #bbbabb;
+}
+
+main {
+  margin-top: 15%;
+}
+
+img.icon {
+  /*border: solid 2.5px #6bc578;*/
+  width: 100px;
+  height: 100px;
+
+}
+
+footer {
+  font-family: ShreeDev0714;
+  color: #bbbabb;
+  bottom: 0;
+  text-align: right;
+  height: 50px;
+}
+
+/* Hover */
+/*http://codepen.io/rauldronca/pen/mEXomp*/
+.header-item.exp {
+	transition: all 0.3s;
+}
+
+.header-item.exp a {
+	transition: all 0.3s;
+}
+
+.header-item.exp:hover {
+	transition: all 0.3s;
+  border-top: 1px solid #6bc578;
+  border-bottom: 1px solid #6bc578;
+	transform: scale(1.3, 1);
+}
+
+.header-item.exp:hover a {
+  transform: scale(.75, 1);
+	letter-spacing: 1.3px;
+}
