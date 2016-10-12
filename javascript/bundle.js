@@ -58,13 +58,33 @@
 	
 	var _reactRouter = __webpack_require__(172);
 	
+	var _home = __webpack_require__(235);
+	
+	var _home2 = _interopRequireDefault(_home);
+	
 	var _splash = __webpack_require__(236);
 	
 	var _splash2 = _interopRequireDefault(_splash);
 	
-	var _about = __webpack_require__(235);
+	var _about = __webpack_require__(237);
 	
 	var _about2 = _interopRequireDefault(_about);
+	
+	var _process = __webpack_require__(238);
+	
+	var _process2 = _interopRequireDefault(_process);
+	
+	var _portfolio = __webpack_require__(239);
+	
+	var _portfolio2 = _interopRequireDefault(_portfolio);
+	
+	var _resume = __webpack_require__(240);
+	
+	var _resume2 = _interopRequireDefault(_resume);
+	
+	var _contact = __webpack_require__(241);
+	
+	var _contact2 = _interopRequireDefault(_contact);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -82,12 +102,12 @@
 	    _react2.default.createElement(
 	      _reactRouter.Route,
 	      { path: '/', component: App },
-	      _react2.default.createElement(_reactRouter.IndexRoute, { component: Home }),
-	      _react2.default.createElement(_reactRouter.Route, { path: 'process', component: Process }),
-	      _react2.default.createElement(_reactRouter.Route, { path: 'portfolio', component: Portfolio }),
-	      _react2.default.createElement(_reactRouter.Route, { path: 'resume', component: Resume }),
+	      _react2.default.createElement(_reactRouter.IndexRoute, { component: _home2.default }),
+	      _react2.default.createElement(_reactRouter.Route, { path: 'process', component: _process2.default }),
+	      _react2.default.createElement(_reactRouter.Route, { path: 'portfolio', component: _portfolio2.default }),
+	      _react2.default.createElement(_reactRouter.Route, { path: 'resume', component: _resume2.default }),
 	      _react2.default.createElement(_reactRouter.Route, { path: 'about', component: _about2.default }),
-	      _react2.default.createElement(_reactRouter.Route, { path: 'contact', component: Contact })
+	      _react2.default.createElement(_reactRouter.Route, { path: 'contact', component: _contact2.default })
 	    )
 	  ), root);
 	});
@@ -185,7 +205,11 @@
 	              )
 	            )
 	          ),
-	          this.props.children
+	          _react2.default.createElement(
+	            'main',
+	            { className: 'tab-container' },
+	            this.props.children
+	          )
 	        ),
 	        _react2.default.createElement(
 	          'footer',
@@ -202,59 +226,6 @@
 	
 	  return App;
 	}(_react2.default.Component);
-	
-	var Home = function Home() {
-	  return _react2.default.createElement(
-	    'main',
-	    null,
-	    _react2.default.createElement(
-	      'section',
-	      null,
-	      _react2.default.createElement(
-	        'h2',
-	        { className: 'copy hi green fade-in one' },
-	        'Hi there.'
-	      ),
-	      _react2.default.createElement(
-	        'h2',
-	        { className: 'copy fade-in two' },
-	        'I\'m Jane - a UX designer, researcher, and writer living and working in SF.'
-	      )
-	    )
-	  );
-	};
-	
-	var Process = function Process() {
-	  return _react2.default.createElement(
-	    'div',
-	    null,
-	    'My Process!'
-	  );
-	};
-	
-	var Portfolio = function Portfolio() {
-	  return _react2.default.createElement(
-	    'div',
-	    null,
-	    'My Portfolio!'
-	  );
-	};
-	
-	var Resume = function Resume() {
-	  return _react2.default.createElement(
-	    'div',
-	    null,
-	    'My stuffs!'
-	  );
-	};
-	
-	var Contact = function Contact() {
-	  return _react2.default.createElement(
-	    'div',
-	    null,
-	    'Call me!'
-	  );
-	};
 
 /***/ },
 /* 1 */
@@ -27291,29 +27262,24 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	var About = function About() {
+	var Home = function Home() {
 	  return _react2.default.createElement(
-	    "div",
-	    { className: "copy about" },
-	    "I\u2019m Jane Hainze (last name sounds like the ketchup, spelled differently) a UX pro with a background in writing, research, and communications.",
-	    _react2.default.createElement("br", null),
-	    _react2.default.createElement("br", null),
+	    "section",
+	    null,
 	    _react2.default.createElement(
-	      "small",
-	      { className: "green" },
-	      "A desire to build and shape the products I once told stories about\xA0"
+	      "h2",
+	      { className: "copy hi green fade-in one" },
+	      "Hi there."
 	    ),
-	    "\u2013 and a long-standing interest in exploring the intersection of people, technology and design \u2013 led me to UX. I love seeing what makes people tick when it comes to tech, and",
 	    _react2.default.createElement(
-	      "small",
-	      { className: "green" },
-	      "striking a balance between the verbal and visual."
-	    ),
-	    "I\u2019m always curious, and always learning."
+	      "h2",
+	      { className: "copy fade-in two" },
+	      "I'm Jane - a UX designer, researcher, and writer living and working in SF."
+	    )
 	  );
 	};
 	
-	exports.default = About;
+	exports.default = Home;
 
 /***/ },
 /* 236 */
@@ -27353,6 +27319,271 @@
 	};
 	
 	exports.default = Splash;
+
+/***/ },
+/* 237 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var About = function About() {
+	  return _react2.default.createElement(
+	    "section",
+	    { className: "copy" },
+	    _react2.default.createElement(
+	      "div",
+	      { className: "about" },
+	      "I\u2019m Jane Hainze (last name sounds like the ketchup, spelled differently) a UX pro with a background in writing, research, and communications.",
+	      _react2.default.createElement("br", null),
+	      _react2.default.createElement("br", null),
+	      _react2.default.createElement(
+	        "small",
+	        { className: "green" },
+	        "A desire to build and shape the products I once told stories about\xA0"
+	      ),
+	      "\u2013 and a long-standing interest in exploring the intersection of people, technology and design \u2013 led me to UX. I love seeing what makes people tick when it comes to tech, and",
+	      _react2.default.createElement(
+	        "small",
+	        { className: "green" },
+	        "striking a balance between the verbal and visual."
+	      ),
+	      "I\u2019m always curious, and always learning."
+	    ),
+	    _react2.default.createElement(
+	      "section",
+	      { className: "about-numbers" },
+	      _react2.default.createElement(
+	        "h2",
+	        null,
+	        "By the numbers:"
+	      ),
+	      _react2.default.createElement(
+	        "small",
+	        null,
+	        "(Things you likely won't find about me on my resume)"
+	      ),
+	      _react2.default.createElement(
+	        "figure",
+	        null,
+	        "18",
+	        _react2.default.createElement(
+	          "figcaption",
+	          null,
+	          "years spent playing the violin"
+	        )
+	      ),
+	      _react2.default.createElement(
+	        "figure",
+	        null,
+	        "3",
+	        _react2.default.createElement(
+	          "figcaption",
+	          null,
+	          "Countries lived in: (Spain, England, U.S.)"
+	        )
+	      ),
+	      _react2.default.createElement(
+	        "figure",
+	        null,
+	        "288",
+	        _react2.default.createElement(
+	          "figcaption",
+	          null,
+	          "hours spent DJing and hosting radio show"
+	        )
+	      ),
+	      _react2.default.createElement(
+	        "figure",
+	        null,
+	        "1",
+	        _react2.default.createElement(
+	          "figcaption",
+	          null,
+	          "year spent analyzing and synthesizing post-9/11 media for senior thesis"
+	        )
+	      )
+	    )
+	  );
+	};
+	
+	exports.default = About;
+
+/***/ },
+/* 238 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var Process = function Process() {
+	  return _react2.default.createElement(
+	    'div',
+	    null,
+	    'My Process!'
+	  );
+	};
+	
+	exports.default = Process;
+
+/***/ },
+/* 239 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var Portfolio = function Portfolio() {
+	  return _react2.default.createElement(
+	    'div',
+	    null,
+	    'My Portfolio!'
+	  );
+	};
+	
+	exports.default = Portfolio;
+
+/***/ },
+/* 240 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var Resume = function Resume() {
+	  return _react2.default.createElement(
+	    'div',
+	    null,
+	    'My stuffs!'
+	  );
+	};
+	
+	exports.default = Resume;
+
+/***/ },
+/* 241 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var Contact = function Contact() {
+	  return _react2.default.createElement(
+	    "section",
+	    { className: "contact" },
+	    _react2.default.createElement(
+	      "h1",
+	      { className: "copy green" },
+	      "Let's talk."
+	    ),
+	    _react2.default.createElement(
+	      "ul",
+	      null,
+	      _react2.default.createElement(
+	        "li",
+	        null,
+	        _react2.default.createElement("img", { src: "assets/icons/twitter.png" })
+	      ),
+	      _react2.default.createElement(
+	        "li",
+	        null,
+	        _react2.default.createElement("img", { src: "assets/icons/twitter.png" })
+	      ),
+	      _react2.default.createElement(
+	        "li",
+	        null,
+	        _react2.default.createElement("img", { src: "assets/icons/twitter.png" })
+	      ),
+	      _react2.default.createElement(
+	        "li",
+	        null,
+	        _react2.default.createElement("img", { src: "assets/icons/twitter.png" })
+	      )
+	    ),
+	    _react2.default.createElement(
+	      "form",
+	      null,
+	      _react2.default.createElement(
+	        "div",
+	        null,
+	        _react2.default.createElement(
+	          "label",
+	          { "for": "name" },
+	          "NAME"
+	        ),
+	        _react2.default.createElement("input", { id: "name" })
+	      ),
+	      _react2.default.createElement(
+	        "div",
+	        null,
+	        _react2.default.createElement(
+	          "label",
+	          { "for": "email" },
+	          "EMAIL"
+	        ),
+	        _react2.default.createElement("input", { id: "email" })
+	      ),
+	      _react2.default.createElement(
+	        "div",
+	        { className: "message" },
+	        _react2.default.createElement(
+	          "label",
+	          { "for": "message" },
+	          "MESSAGE"
+	        ),
+	        _react2.default.createElement("input", { id: "message" })
+	      ),
+	      _react2.default.createElement("input", { type: "submit", className: "contact-submit", value: "SUBMIT" })
+	    )
+	  );
+	};
+	
+	exports.default = Contact;
 
 /***/ }
 /******/ ]);

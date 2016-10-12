@@ -1,0 +1,122 @@
+
+.about {
+  /*width: 518px;*/
+	/*height: 297px;*/
+}
+
+.about-numbers {
+  margin-top: 75px;
+  text-align: left;
+}
+
+.about-numbers:after {
+  content: ""; /* Empty content string */
+  display: block; /* Only block elements can clear */
+  clear: both;
+}
+
+.about-numbers h2 {
+  font-size: 48px;
+  color: #9b9b9b;
+  border-bottom: 1.5px solid #6bc578;
+  padding-bottom: 5px;
+  display: inline;
+}
+
+section small {
+  display: inline;
+  font-size: 20px;
+  color: #6bc578;
+  margin-left: 20px;
+  font-style: italic;
+}
+
+.about-numbers figure {
+  font-size: 48px;
+  color: #6bc578;
+  float: left;
+  width: 200px;
+  text-align: center;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 70px;
+}
+
+.about-numbers figcaption {
+  color: #9b9b9b;
+  font-size: 20px;
+  font-style: italic;
+  line-height: 30px;
+  text-align: left;
+}
+
+/* Contact */
+
+.contact {
+  padding-top: 30px;
+}
+
+.contact ul {
+  display: flex;
+  /*align-items: center;*/
+  justify-content: space-around;
+  margin-top: 35px;
+  margin-bottom: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 150px;
+  padding-right: 150px;
+  width: 470px;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  width: 470px;
+  margin: auto;
+  align-items: center;
+}
+
+.contact form div {
+  margin-top: 35px;
+  background-color: rgba(107, 197, 120, 0.2);
+  text-align: left;
+  width: 100%;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 80px;
+}
+
+.contact label {
+  color: #6bc578;
+  margin-left: 19px;
+  padding-top: 10px;
+  font-size: 12px;
+  font-family: HelveticaNeueDeskInterface;
+}
+
+.contact input {
+  height: 40px;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  align-self: flex-end;
+}
+
+.contact form div.message {
+  height: 180px;
+}
+
+#message {
+  height: 140px;
+}
+
+.contact input.contact-submit {
+  margin-top: 20px;
+  width: 100%;
+  background-color: rgba(107, 197, 120, 0.2);
+  color: #6bc578;
+  font-size: 12px;
+}

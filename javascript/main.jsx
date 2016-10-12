@@ -2,9 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Router, Route, Link, IndexRoute, hashHistory } from 'react-router'
 
-
+import Home from './home';
 import Splash from './splash';
 import About from './about';
+import Process from './process';
+import Portfolio from './portfolio';
+import Resume from './resume';
+import Contact from './contact';
 
 document.addEventListener("DOMContentLoaded", () => {
   const root = document.getElementById("root");
@@ -56,7 +60,9 @@ class App extends React.Component {
             </nav>
           </header>
 
-          { this.props.children }
+          <main className="tab-container">
+            { this.props.children }
+          </main>
     		</div>
 
     		<footer>
@@ -67,36 +73,3 @@ class App extends React.Component {
     );
   }
 }
-
-const Home = () => (
-  <main>
-    <section>
-      <h2 className="copy hi green fade-in one">Hi there.</h2>
-      <h2 className="copy fade-in two">I'm Jane - a UX designer, researcher, and writer living and working in SF.</h2>
-    </section>
-  </main>
-);
-
-const Process = () => (
-  <div>
-    My Process!
-  </div>
-);
-
-const Portfolio = () => (
-  <div>
-    My Portfolio!
-  </div>
-);
-
-const Resume = () => (
-  <div>
-    My stuffs!
-  </div>
-);
-
-const Contact = () => (
-  <div>
-    Call me!
-  </div>
-);
