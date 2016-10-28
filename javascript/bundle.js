@@ -105,8 +105,10 @@
 	      _react2.default.createElement(_reactRouter.IndexRoute, { component: _home2.default }),
 	      _react2.default.createElement(_reactRouter.Route, { path: 'process', component: _process2.default }),
 	      _react2.default.createElement(_reactRouter.Route, { path: 'portfolio', component: _portfolio2.default }),
+	      '// ',
 	      _react2.default.createElement(_reactRouter.Route, { path: 'resume', component: _resume2.default }),
 	      _react2.default.createElement(_reactRouter.Route, { path: 'about', component: _about2.default }),
+	      '// ',
 	      _react2.default.createElement(_reactRouter.Route, { path: 'contact', component: _contact2.default })
 	    )
 	  ), root);
@@ -145,7 +147,7 @@
 	                  _react2.default.createElement(
 	                    _reactRouter.Link,
 	                    { to: '/process', className: 'header-link' },
-	                    'My Process'
+	                    'Process'
 	                  )
 	                ),
 	                _react2.default.createElement(
@@ -159,20 +161,11 @@
 	                ),
 	                _react2.default.createElement(
 	                  'li',
-	                  { className: 'header-item exp' },
-	                  _react2.default.createElement(
-	                    _reactRouter.Link,
-	                    { to: '/resume', className: 'header-link' },
-	                    'Resum\xE9'
-	                  )
-	                ),
-	                _react2.default.createElement(
-	                  'li',
 	                  { className: 'header-item' },
 	                  _react2.default.createElement(
 	                    _reactRouter.Link,
 	                    { to: '/', className: 'header-link' },
-	                    _react2.default.createElement('img', { className: 'icon', src: 'http://www.polyvore.com/cgi/img-thing?.out=jpg&size=l&tid=81892287' })
+	                    _react2.default.createElement('img', { className: 'icon', src: 'assets/images/header.jpg' })
 	                  )
 	                ),
 	                _react2.default.createElement(
@@ -192,15 +185,6 @@
 	                    { to: '/about', className: 'header-link' },
 	                    'About'
 	                  )
-	                ),
-	                _react2.default.createElement(
-	                  'li',
-	                  { className: 'header-item exp' },
-	                  _react2.default.createElement(
-	                    _reactRouter.Link,
-	                    { to: '/contact', className: 'header-link' },
-	                    'Contact'
-	                  )
 	                )
 	              )
 	            )
@@ -214,6 +198,51 @@
 	        _react2.default.createElement(
 	          'footer',
 	          null,
+	          _react2.default.createElement(
+	            'small',
+	            { className: 'green' },
+	            'Get in touch:'
+	          ),
+	          _react2.default.createElement(
+	            'ul',
+	            null,
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              _react2.default.createElement(
+	                'a',
+	                { href: 'https://twitter.com/Jane_Weese' },
+	                _react2.default.createElement('img', { src: 'assets/icons/twitter.png' })
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              _react2.default.createElement(
+	                'a',
+	                { href: 'http://www.linkedin.com/in/jane-hainze' },
+	                _react2.default.createElement('img', { src: 'assets/icons/linked-in.svg' })
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              _react2.default.createElement(
+	                'a',
+	                { href: 'https://medium.com/@jane_weese' },
+	                _react2.default.createElement('img', { src: 'assets/icons/medium.svg' })
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              _react2.default.createElement(
+	                'a',
+	                { href: 'mailto:jane.hainze@gmail.com' },
+	                _react2.default.createElement('img', { src: 'assets/icons/twitter.png' })
+	              )
+	            )
+	          ),
 	          _react2.default.createElement(
 	            'small',
 	            null,
@@ -27341,76 +27370,96 @@
 	    "section",
 	    { className: "copy" },
 	    _react2.default.createElement(
-	      "div",
+	      "article",
 	      { className: "about" },
-	      "I\u2019m Jane Hainze (last name sounds like the ketchup, spelled differently) a UX pro with a background in writing, research, and communications.",
-	      _react2.default.createElement("br", null),
-	      _react2.default.createElement("br", null),
 	      _react2.default.createElement(
-	        "small",
-	        { className: "green" },
-	        "A desire to build and shape the products I once told stories about\xA0"
-	      ),
-	      "\u2013 and a long-standing interest in exploring the intersection of people, technology and design \u2013 led me to UX. I love seeing what makes people tick when it comes to tech, and",
-	      _react2.default.createElement(
-	        "small",
-	        { className: "green" },
-	        "striking a balance between the verbal and visual."
-	      ),
-	      "I\u2019m always curious, and always learning."
+	        "p",
+	        null,
+	        "I\u2019m Jane Hainze, a UX pro with a background in writing, research, and communications.",
+	        _react2.default.createElement("br", null),
+	        _react2.default.createElement("br", null),
+	        _react2.default.createElement(
+	          "span",
+	          { className: "green" },
+	          "A desire to build and shape the products I once told stories about\xA0"
+	        ),
+	        "\u2013 and a long-standing interest in exploring the intersection of people, technology and design \u2013 led me to UX. I love seeing what makes people tick when it comes to tech, and",
+	        _react2.default.createElement(
+	          "span",
+	          { className: "green" },
+	          "striking a balance between the verbal and visual.\xA0"
+	        )
+	      )
 	    ),
 	    _react2.default.createElement(
 	      "section",
 	      { className: "about-numbers" },
 	      _react2.default.createElement(
-	        "h2",
+	        "div",
 	        null,
-	        "By the numbers:"
-	      ),
-	      _react2.default.createElement(
-	        "small",
-	        null,
-	        "(Things you likely won't find about me on my resume)"
-	      ),
-	      _react2.default.createElement(
-	        "figure",
-	        null,
-	        "18",
 	        _react2.default.createElement(
-	          "figcaption",
+	          "h2",
 	          null,
-	          "years spent playing the violin"
+	          "By the numbers:"
+	        ),
+	        _react2.default.createElement(
+	          "small",
+	          { className: "green" },
+	          "(and beyond my resume)"
 	        )
 	      ),
 	      _react2.default.createElement(
-	        "figure",
-	        null,
-	        "3",
+	        "section",
+	        { className: "about-jane" },
 	        _react2.default.createElement(
-	          "figcaption",
-	          null,
-	          "Countries lived in: (Spain, England, U.S.)"
-	        )
-	      ),
-	      _react2.default.createElement(
-	        "figure",
-	        null,
-	        "288",
-	        _react2.default.createElement(
-	          "figcaption",
-	          null,
-	          "hours spent DJing and hosting radio show"
-	        )
-	      ),
-	      _react2.default.createElement(
-	        "figure",
-	        null,
-	        "1",
-	        _react2.default.createElement(
-	          "figcaption",
-	          null,
-	          "year spent analyzing and synthesizing post-9/11 media for senior thesis"
-	        )
+	          "section",
+	          { className: "about-numbers-list" },
+	          _react2.default.createElement(
+	            "div",
+	            { className: "about-fact" },
+	            _react2.default.createElement(
+	              "figure",
+	              null,
+	              "18"
+	            ),
+	            _react2.default.createElement(
+	              "div",
+	              null,
+	              "years spent playing the violin"
+	            )
+	          ),
+	          _react2.default.createElement("br", null),
+	          _react2.default.createElement(
+	            "div",
+	            { className: "about-fact" },
+	            _react2.default.createElement(
+	              "figure",
+	              null,
+	              "3"
+	            ),
+	            _react2.default.createElement(
+	              "div",
+	              null,
+	              "Countries lived in: (Spain, England, U.S.)"
+	            )
+	          ),
+	          _react2.default.createElement("br", null),
+	          _react2.default.createElement(
+	            "div",
+	            { className: "about-fact" },
+	            _react2.default.createElement(
+	              "figure",
+	              null,
+	              "288"
+	            ),
+	            _react2.default.createElement(
+	              "div",
+	              null,
+	              "hours spent DJing and hosting radio show"
+	            )
+	          )
+	        ),
+	        _react2.default.createElement("img", { className: "about-photo", src: "assets/images/jane.png" })
 	      )
 	    )
 	  );
@@ -27422,7 +27471,7 @@
 /* 238 */
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';
+	"use strict";
 	
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -27436,9 +27485,43 @@
 	
 	var Process = function Process() {
 	  return _react2.default.createElement(
-	    'div',
-	    null,
-	    'My Process!'
+	    "section",
+	    { className: "process" },
+	    _react2.default.createElement(
+	      "p",
+	      null,
+	      "I believe that design is more than sleek aesthetics and pretty pixels (though that certainly helps). Good design is grounded in good research, and maps back to the way people think and behave \u2013 and that includes users outside of the Silicon Valley bubble. I\u2019m partial to the lean UX process, in which research, testing, and user feedback are a constant throughout the design process."
+	    ),
+	    _react2.default.createElement(
+	      "span",
+	      { className: "green" },
+	      "Discovery"
+	    ),
+	    _react2.default.createElement(
+	      "span",
+	      { className: "desc" },
+	      "User + Experience Research | Task + Competitive Analysis"
+	    ),
+	    _react2.default.createElement(
+	      "span",
+	      { className: "green" },
+	      "Discovery"
+	    ),
+	    _react2.default.createElement(
+	      "span",
+	      { className: "desc" },
+	      "Style Guides / Mockups"
+	    ),
+	    _react2.default.createElement(
+	      "span",
+	      { className: "green" },
+	      "Discovery"
+	    ),
+	    _react2.default.createElement(
+	      "span",
+	      { className: "desc" },
+	      "Usability Testing | Rapid Prototyping"
+	    )
 	  );
 	};
 	
@@ -27448,7 +27531,7 @@
 /* 239 */
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';
+	"use strict";
 	
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -27462,9 +27545,20 @@
 	
 	var Portfolio = function Portfolio() {
 	  return _react2.default.createElement(
-	    'div',
-	    null,
-	    'My Portfolio!'
+	    "section",
+	    { className: "portfolio" },
+	    _react2.default.createElement(
+	      "h1",
+	      null,
+	      "Under construction..."
+	    ),
+	    _react2.default.createElement("br", null),
+	    _react2.default.createElement("br", null),
+	    _react2.default.createElement(
+	      "h1",
+	      null,
+	      "Please check back soon"
+	    )
 	  );
 	};
 	
@@ -27527,22 +27621,38 @@
 	      _react2.default.createElement(
 	        "li",
 	        null,
-	        _react2.default.createElement("img", { src: "assets/icons/twitter.png" })
+	        _react2.default.createElement(
+	          "a",
+	          { href: "https://twitter.com/Jane_Weese" },
+	          _react2.default.createElement("img", { src: "assets/icons/twitter.png" })
+	        )
 	      ),
 	      _react2.default.createElement(
 	        "li",
 	        null,
-	        _react2.default.createElement("img", { src: "assets/icons/twitter.png" })
+	        _react2.default.createElement(
+	          "a",
+	          { href: "http://www.linkedin.com/in/jane-hainze" },
+	          _react2.default.createElement("img", { src: "assets/icons/linked-in.svg" })
+	        )
 	      ),
 	      _react2.default.createElement(
 	        "li",
 	        null,
-	        _react2.default.createElement("img", { src: "assets/icons/twitter.png" })
+	        _react2.default.createElement(
+	          "a",
+	          { href: "https://medium.com/@jane_weese" },
+	          _react2.default.createElement("img", { src: "assets/icons/medium.svg" })
+	        )
 	      ),
 	      _react2.default.createElement(
 	        "li",
 	        null,
-	        _react2.default.createElement("img", { src: "assets/icons/twitter.png" })
+	        _react2.default.createElement(
+	          "a",
+	          { href: "mailto:jane.hainze@gmail.com" },
+	          _react2.default.createElement("img", { src: "assets/icons/twitter.png" })
+	        )
 	      )
 	    ),
 	    _react2.default.createElement(

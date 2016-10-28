@@ -115,6 +115,7 @@ ul.header-list {
 
 .tab-container {
 	margin-top: 110px;
+	max-width: 1200px;
 }
 
 .copy {
@@ -170,14 +171,6 @@ ul.header-list {
   margin-bottom: 75px;
 }
 
-.about {
-	font-size: 20px;
-  color: #9b9b9b;
-	text-align: left;
-	line-height: 28px;
-	width: 518px;
-}
-
 main {
   margin-top: 15%;
 }
@@ -189,13 +182,6 @@ img.icon {
 
 }
 
-footer {
-  font-family: ShreeDev0714;
-  color: #bbbabb;
-  bottom: 0;
-  text-align: right;
-  height: 50px;
-}
 
 /* Hover */
 /*http://codepen.io/rauldronca/pen/mEXomp*/
@@ -218,3 +204,40 @@ footer {
   transform: scale(.75, 1);
 	letter-spacing: 1.3px;
 }
+
+/*  Footer  */
+
+/*footer {
+	font-family: ShreeDev0714;
+	color: #bbbabb;
+	bottom: 0;
+	text-align: right;
+	height: 50px;
+}*/
+
+footer {
+	/*margin-top: 150px;*/
+	display: flex;
+	flex-direction: column;
+}
+
+footer > small.green {
+	margin-left: auto;
+	margin-right: auto;
+	font-family: ShreeDev0714;
+  font-size: 24px;
+}
+
+footer > ul {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 35px;
+  margin-bottom: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  /*padding-left: 150px;
+  padding-right: 150px;*/
+  /*width: 470px;*/
+	width: 500px;
+}
+

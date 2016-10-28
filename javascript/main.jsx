@@ -18,9 +18,9 @@ document.addEventListener("DOMContentLoaded", () => {
         <IndexRoute component={Home}/>
         <Route path="process" component={Process}/>
         <Route path="portfolio" component={Portfolio}/>
-        <Route path="resume" component={Resume}/>
+        // <Route path="resume" component={Resume}/>
         <Route path="about" component={About}/>
-        <Route path="contact" component={Contact}/>
+        // <Route path="contact" component={Contact}/>
       </Route>
     </Router>), root);
 });
@@ -34,17 +34,14 @@ class App extends React.Component {
             <nav>
               <ul className="header-list">
                 <li className="header-item exp">
-                  <Link to={'/process'} className="header-link">My Process</Link>
+                  <Link to={'/process'} className="header-link">Process</Link>
                 </li>
                 <li className="header-item exp">
                   <Link to={'/portfolio'} className="header-link">Portfolio</Link>
                 </li>
-                <li className="header-item exp">
-                  <Link to={'/resume'} className="header-link">Resum&eacute;</Link>
-                </li>
                 <li className="header-item">
                   <Link to={'/'} className="header-link">
-                    <img className="icon" src="http://www.polyvore.com/cgi/img-thing?.out=jpg&size=l&tid=81892287"/>
+                    <img className="icon" src="assets/images/header.jpg"/>
                   </Link>
                 </li>
                 <li className="header-item exp">
@@ -52,9 +49,6 @@ class App extends React.Component {
                 </li>
                 <li className="header-item exp">
                   <Link to={'/about'} className="header-link">About</Link>
-                </li>
-                <li className="header-item exp">
-                  <Link to={'/contact'} className="header-link">Contact</Link>
                 </li>
               </ul>
             </nav>
@@ -66,6 +60,29 @@ class App extends React.Component {
     		</div>
 
     		<footer>
+          <small className="green">Get in touch:</small>
+          <ul>
+            <li>
+              <a href="https://twitter.com/Jane_Weese">
+                <img src="assets/icons/twitter.png"/>
+              </a>
+            </li>
+            <li>
+              <a href="http://www.linkedin.com/in/jane-hainze">
+                <img src="assets/icons/linked-in.svg"/>
+              </a>
+            </li>
+            <li>
+              <a href="https://medium.com/@jane_weese">
+                <img src="assets/icons/medium.svg"/>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:jane.hainze@gmail.com">
+                <img src="assets/icons/twitter.png"/>
+              </a>
+            </li>
+          </ul>
     			<small>&copy; Jane Hainze 2016</small>
     		</footer>
       </div>
