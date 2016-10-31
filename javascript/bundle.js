@@ -235,7 +235,7 @@
 	              _react2.default.createElement(
 	                'a',
 	                { href: 'mailto:jane.hainze@gmail.com' },
-	                _react2.default.createElement('img', { src: 'assets/icons/twitter.png' })
+	                _react2.default.createElement('img', { src: 'assets/icons/mail.png' })
 	              )
 	            )
 	          ),

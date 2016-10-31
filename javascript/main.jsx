@@ -77,7 +77,7 @@ class App extends React.Component {
             </li>
             <li>
               <a href="mailto:jane.hainze@gmail.com">
-                <img src="assets/icons/twitter.png"/>
+                <img src="assets/icons/mail.png"/>
               </a>
             </li>
           </ul>
