@@ -1,0 +1,152 @@
+
+.about {
+	font-size: 20px;
+  color: #9b9b9b;
+	text-align: left;
+	line-height: 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 70px;
+	flex-direction: column;
+}
+
+.about-photo {
+  width: 350px;
+  height: 350px;
+}
+
+.about-numbers {
+  margin-top: 75px;
+  text-align: left;
+	margin-bottom: 75px;
+}
+
+.about-numbers h2 {
+  font-size: 48px;
+  color: #9b9b9b;
+  padding-bottom: 5px;
+  display: inline;
+}
+
+.about-numbers figure {
+  font-size: 48px;
+  color: #6bc578;
+  text-align: center;
+	margin: 0 0 20px 0;
+	display: inline-block;
+}
+
+.about-numbers > div > small {
+	font-size: 20px;
+	margin-left: 15px;
+}
+
+
+.about-numbers-list {
+	width: 100%;
+	padding-top: 50px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.about-numbers-list > div {
+	width: 350px;
+	font-family: ShreeDev0714;
+  font-size: 20px;
+  color: #9b9b9b;
+}
+
+.about-fact {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.about-fact > div {
+	width: 200px;
+	line-height: 24px;
+	font-style: italic;
+}
+
+
+/*  Process  */
+
+.process {
+	font-family: ShreeDev0714;
+	margin-bottom: 75px;
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.process > p {
+	font-size: 20px;
+	color: #9b9b9b;
+	width: 615px;
+	line-height: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: justify;
+	margin-bottom: 50px;
+}
+
+.process span.green {
+	width: 100%;
+	display: block;
+	margin-bottom: 20px;
+	font-size: 48px;
+	height: 100px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.process span.green:nth-child(2n+1) {
+	border-right: 10px #6bc578 solid;
+	text-align: right;
+	padding-right: 15px;
+}
+
+.process span.green:nth-child(2n) {
+	border-left: 10px #6bc578 solid;
+	text-align: left;
+	padding-left: 15px;
+}
+
+.process span.green:last-child {
+	border-left: 10px #6bc578 solid;
+	text-align: left;
+	padding-left: 15px;
+	margin-left: 80px;
+}
+
+.process .desc {
+	font-style: italic;
+	line-height: 24px;
+	display: block;
+	font-size: 14px;
+	color: #6bc578;
+	font-size: 18px;
+}
+
+
+/*  Portfolio  */
+
+.portfolio h1 {
+	font-family: ShreeDev0714;
+	font-size: 64px;
+  color: #6bc578;
+	text-align: center;
+}
+
+.portfolio h1:last-child {
+	margin-bottom: 20px;
+}
+
+.portfolio div {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	margin-bottom: 20px;
+}
