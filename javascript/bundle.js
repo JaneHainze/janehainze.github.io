@@ -27491,7 +27491,9 @@
 	      _react2.default.createElement(
 	        "span",
 	        { className: "desc" },
-	        "A/B Testing \u2013 Surveys \u2013 Contextual Interviews \u2013 Usability Testing"
+	        "A/B Testing \u2013 Surveys \u2013 Contextual ",
+	        _react2.default.createElement("br", null),
+	        "Interviews \u2013 Usability Testing"
 	      )
 	    ),
 	    _react2.default.createElement(
@@ -27501,7 +27503,9 @@
 	      _react2.default.createElement(
 	        "span",
 	        { className: "desc" },
-	        "Information Architecture \u2013 Audience Development \u2013 Copywriting"
+	        "Information Architecture \u2013 Audience ",
+	        _react2.default.createElement("br", null),
+	        "Development \u2013 Copywriting"
 	      )
 	    ),
 	    _react2.default.createElement(

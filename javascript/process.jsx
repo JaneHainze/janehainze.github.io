@@ -9,13 +9,13 @@ const Process = () => (
 
       <span className="green">Research
         <span className="desc">
-          A/B Testing – Surveys – Contextual Interviews – Usability Testing
+          A/B Testing – Surveys – Contextual <br/>Interviews – Usability Testing
         </span>
       </span>
 
       <span className="green">Content Strategy
         <span className="desc">
-          Information Architecture – Audience Development – Copywriting
+          Information Architecture – Audience <br/>Development – Copywriting
         </span>
       </span>
 
