@@ -77,8 +77,6 @@ body {
 
 .page-wrap {
   min-height: 100%;
-  /*height: 100%;*/
-  /*margin-bottom: -100px;*/
 }
 
 header {
@@ -88,10 +86,7 @@ header {
 ul.header-list {
   height: 60px;
   display: flex;
-  /*flex-direction: row;*/
   justify-content: space-between;
-  /*width: 70%;*/
-  /*margin: auto;*/
 }
 
 .header-item {
@@ -125,6 +120,9 @@ ul.header-list {
   font-style: normal;
   font-stretch: normal;
   text-align: center;
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 /* https://codepen.io/bluehaus/pen/EfGyi */
@@ -207,16 +205,7 @@ img.icon {
 
 /*  Footer  */
 
-/*footer {
-	font-family: ShreeDev0714;
-	color: #bbbabb;
-	bottom: 0;
-	text-align: right;
-	height: 50px;
-}*/
-
 footer {
-	/*margin-top: 150px;*/
 	display: flex;
 	flex-direction: column;
 }
@@ -235,9 +224,14 @@ footer > ul {
   margin-bottom: 25px;
   margin-left: auto;
   margin-right: auto;
-  /*padding-left: 150px;
-  padding-right: 150px;*/
-  /*width: 470px;*/
 	width: 500px;
 }
 
+.copyright {
+	font-family: ShreeDev0714;
+	color: #9b9b9b;
+	width: 100%;
+	text-align: right;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}

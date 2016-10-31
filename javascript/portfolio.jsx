@@ -4,9 +4,10 @@ const Portfolio = () => (
   <section className="portfolio">
     <h1>Under construction...</h1>
 
-    <br/>
-    <br/>
-    
+    <div>
+      <img src='assets/images/under-construction.png' />
+    </div>
+
     <h1>Please check back soon</h1>
   </section>
 );

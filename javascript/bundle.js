@@ -105,11 +105,7 @@
 	      _react2.default.createElement(_reactRouter.IndexRoute, { component: _home2.default }),
 	      _react2.default.createElement(_reactRouter.Route, { path: 'process', component: _process2.default }),
 	      _react2.default.createElement(_reactRouter.Route, { path: 'portfolio', component: _portfolio2.default }),
-	      '// ',
-	      _react2.default.createElement(_reactRouter.Route, { path: 'resume', component: _resume2.default }),
-	      _react2.default.createElement(_reactRouter.Route, { path: 'about', component: _about2.default }),
-	      '// ',
-	      _react2.default.createElement(_reactRouter.Route, { path: 'contact', component: _contact2.default })
+	      _react2.default.createElement(_reactRouter.Route, { path: 'about', component: _about2.default })
 	    )
 	  ), root);
 	});
@@ -245,7 +241,7 @@
 	          ),
 	          _react2.default.createElement(
 	            'small',
-	            null,
+	            { className: 'copyright' },
 	            '\xA9 Jane Hainze 2016'
 	          )
 	        )
@@ -27375,7 +27371,7 @@
 	      _react2.default.createElement(
 	        "p",
 	        null,
-	        "I\u2019m Jane Hainze, a UX pro with a background in writing, research, and communications.",
+	        "I\u2019m Jane Hainze, a UX pro with a background in writing, research, and communications. In my past life working at a tech PR agency, I helped tech companies tell complex stories for the right audiences, oftentimes via ghostwriting and publishing articles in outlets like Fortune, Quartz, and Entrepreneur.",
 	        _react2.default.createElement("br", null),
 	        _react2.default.createElement("br", null),
 	        _react2.default.createElement(
@@ -27383,12 +27379,13 @@
 	          { className: "green" },
 	          "A desire to build and shape the products I once told stories about\xA0"
 	        ),
-	        "\u2013 and a long-standing interest in exploring the intersection of people, technology and design \u2013 led me to UX. I love seeing what makes people tick when it comes to tech, and",
+	        "\u2013 and a long-standing interest in exploring the intersection of people, technology and design \u2013 led me to UX. I love\xA0",
 	        _react2.default.createElement(
 	          "span",
 	          { className: "green" },
-	          "striking a balance between the verbal and visual.\xA0"
-	        )
+	          "connecting the dots between the verbal and visual,\xA0"
+	        ),
+	        "helping businesses identify and dig into into spoken (and unspoken) user needs, and designing accordingly."
 	      )
 	    ),
 	    _react2.default.createElement(
@@ -27404,62 +27401,57 @@
 	        ),
 	        _react2.default.createElement(
 	          "small",
-	          { className: "green" },
-	          "(and beyond my resume)"
+	          { className: "green resume" },
+	          "(and beyond my resum\xE9)"
 	        )
 	      ),
 	      _react2.default.createElement(
 	        "section",
-	        { className: "about-jane" },
+	        { className: "about-numbers-list" },
 	        _react2.default.createElement(
-	          "section",
-	          { className: "about-numbers-list" },
+	          "div",
+	          { className: "about-fact" },
 	          _react2.default.createElement(
-	            "div",
-	            { className: "about-fact" },
-	            _react2.default.createElement(
-	              "figure",
-	              null,
-	              "18"
-	            ),
-	            _react2.default.createElement(
-	              "div",
-	              null,
-	              "years spent playing the violin"
-	            )
+	            "figure",
+	            null,
+	            "18"
 	          ),
-	          _react2.default.createElement("br", null),
 	          _react2.default.createElement(
 	            "div",
-	            { className: "about-fact" },
-	            _react2.default.createElement(
-	              "figure",
-	              null,
-	              "3"
-	            ),
-	            _react2.default.createElement(
-	              "div",
-	              null,
-	              "Countries lived in: (Spain, England, U.S.)"
-	            )
-	          ),
-	          _react2.default.createElement("br", null),
-	          _react2.default.createElement(
-	            "div",
-	            { className: "about-fact" },
-	            _react2.default.createElement(
-	              "figure",
-	              null,
-	              "288"
-	            ),
-	            _react2.default.createElement(
-	              "div",
-	              null,
-	              "hours spent DJing and hosting radio show"
-	            )
+	            null,
+	            "Played violin for over 18 years."
 	          )
 	        ),
-	        _react2.default.createElement("img", { className: "about-photo", src: "assets/images/jane.png" })
+	        _react2.default.createElement("br", null),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "about-fact" },
+	          _react2.default.createElement(
+	            "figure",
+	            null,
+	            "300"
+	          ),
+	          _react2.default.createElement(
+	            "div",
+	            null,
+	            "Spent over 300 hours DJing a radio show and running my college's radio station"
+	          )
+	        ),
+	        _react2.default.createElement("br", null),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "about-fact" },
+	          _react2.default.createElement(
+	            "figure",
+	            null,
+	            "3"
+	          ),
+	          _react2.default.createElement(
+	            "div",
+	            null,
+	            "Lived in three countries: (Spain, England, U.S.)"
+	          )
+	        )
 	      )
 	    )
 	  );
@@ -27490,37 +27482,37 @@
 	    _react2.default.createElement(
 	      "p",
 	      null,
-	      "I believe that design is more than sleek aesthetics and pretty pixels (though that certainly helps). Good design is grounded in good research, and maps back to the way people think and behave \u2013 and that includes users outside of the Silicon Valley bubble. I\u2019m partial to the lean UX process, in which research, testing, and user feedback are a constant throughout the design process."
+	      "I believe that design is more than sleek aesthetics and pretty pixels (though that certainly helps) \u2013 it\u2019s about asking strategic \u201Cwhys?\u201D to fuel an accessible and engaging user experience. I strive to learn as much as possible about the behaviors, attitudes and emotions of users via qualitative and quantitative research, and synthesize those findings into clear, intuitive design."
 	    ),
 	    _react2.default.createElement(
 	      "span",
 	      { className: "green" },
-	      "Discovery"
-	    ),
-	    _react2.default.createElement(
-	      "span",
-	      { className: "desc" },
-	      "User + Experience Research | Task + Competitive Analysis"
-	    ),
-	    _react2.default.createElement(
-	      "span",
-	      { className: "green" },
-	      "Discovery"
-	    ),
-	    _react2.default.createElement(
-	      "span",
-	      { className: "desc" },
-	      "Style Guides / Mockups"
+	      "Research",
+	      _react2.default.createElement(
+	        "span",
+	        { className: "desc" },
+	        "A/B Testing \u2013 Surveys \u2013 Contextual Interviews \u2013 Usability Testing"
+	      )
 	    ),
 	    _react2.default.createElement(
 	      "span",
 	      { className: "green" },
-	      "Discovery"
+	      "Content Strategy",
+	      _react2.default.createElement(
+	        "span",
+	        { className: "desc" },
+	        "Information Architecture \u2013 Audience Development \u2013 Copywriting"
+	      )
 	    ),
 	    _react2.default.createElement(
 	      "span",
-	      { className: "desc" },
-	      "Usability Testing | Rapid Prototyping"
+	      { className: "green" },
+	      "UX Design",
+	      _react2.default.createElement(
+	        "span",
+	        { className: "desc" },
+	        "Mockups \u2013 Storyboards \u2013 Prototypes"
+	      )
 	    )
 	  );
 	};
@@ -27531,7 +27523,7 @@
 /* 239 */
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
+	'use strict';
 	
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -27545,19 +27537,22 @@
 	
 	var Portfolio = function Portfolio() {
 	  return _react2.default.createElement(
-	    "section",
-	    { className: "portfolio" },
+	    'section',
+	    { className: 'portfolio' },
 	    _react2.default.createElement(
-	      "h1",
+	      'h1',
 	      null,
-	      "Under construction..."
+	      'Under construction...'
 	    ),
-	    _react2.default.createElement("br", null),
-	    _react2.default.createElement("br", null),
 	    _react2.default.createElement(
-	      "h1",
+	      'div',
 	      null,
-	      "Please check back soon"
+	      _react2.default.createElement('img', { src: 'assets/images/under-construction.png' })
+	    ),
+	    _react2.default.createElement(
+	      'h1',
+	      null,
+	      'Please check back soon'
 	    )
 	  );
 	};

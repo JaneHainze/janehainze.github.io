@@ -18,9 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
         <IndexRoute component={Home}/>
         <Route path="process" component={Process}/>
         <Route path="portfolio" component={Portfolio}/>
-        // <Route path="resume" component={Resume}/>
         <Route path="about" component={About}/>
-        // <Route path="contact" component={Contact}/>
       </Route>
     </Router>), root);
 });
@@ -83,7 +81,7 @@ class App extends React.Component {
               </a>
             </li>
           </ul>
-    			<small>&copy; Jane Hainze 2016</small>
+    			<small className="copyright">&copy; Jane Hainze 2016</small>
     		</footer>
       </div>
 
